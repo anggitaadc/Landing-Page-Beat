@@ -893,9 +893,9 @@ form button:hover {
     margin-bottom: -20px;
 }
 .wa-chat-button {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: calc(50% - 250px + 20px);
     background-color: #64B161;
     color: white;
     font-weight: bold;
@@ -906,8 +906,18 @@ form button:hover {
     text-decoration: none;
     z-index: 1000;
     transition: background-color 0.3s ease;
+    width: max-content;
 }
 
+.wa-chat-button:hover {
+    background-color: #1ebe5b;
+}
+
+.wa-chat-button .wa-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
 .wa-chat-button:hover {
     background-color: #1ebe5b;
 }
