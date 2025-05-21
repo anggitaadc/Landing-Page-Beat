@@ -10,6 +10,7 @@ body {
     background-color: #ffffff;
     border: 1px solid #cccccc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 /* #loader {
@@ -890,4 +891,29 @@ form button:hover {
     margin-top: 30px;
     margin-left: -20px;
     margin-bottom: -20px;
+}
+.wa-chat-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #64B161;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.wa-chat-button:hover {
+    background-color: #1ebe5b;
+}
+
+.wa-chat-button .wa-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
 }
